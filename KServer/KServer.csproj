@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PublishAot>false</PublishAot>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="protobuf-net" Version="3.2.30" />
+    <PackageReference Include="System.Reflection" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
